@@ -2119,7 +2119,7 @@ const styles = {
   },
   mainHeader: {
     marginBottom: "10px",
-    padding: "12px",
+    padding: "10px",
     borderRadius: "18px",
     background: "linear-gradient(180deg, #182230 0%, #0b1018 100%)",
     border: "1px solid #2f3a4a",
@@ -2140,8 +2140,8 @@ const styles = {
   },
 
   tierBadge: {
-    width: "36px",
-    height: "36px",
+    width: "24px",
+    height: "24px",
     borderRadius: "50%",
     color: "#111",
     display: "flex",
@@ -2153,7 +2153,7 @@ const styles = {
   },
 
   nicknameText: {
-    fontSize: "20px",
+    fontSize: "18px",
     fontWeight: "bold",
     color: "#fff",
   },
