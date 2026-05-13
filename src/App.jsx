@@ -358,7 +358,6 @@ rules: [
 speed: "속도",
 curve: "커브",
 luck: "운",
-ad: "광고 영역",
 newRecord: "신기록",
 selectRider: "기수를 선택하세요.",
 resetConfirm: "저장된 기록을 초기화할까요?",
@@ -415,7 +414,6 @@ rules: [
 speed: "Speed",
 curve: "Curve",
 luck: "Luck",
-ad: "Ad Area",
 newRecord: "New Record",
 selectRider: "Please select a rider.",
 resetConfirm: "Reset saved data?",
@@ -1608,13 +1606,6 @@ alert(
       {t.startRace}
     </button>
 
-
-    {/* 하단 배너 광고 영역 */}
-    <div style={styles.adBox}>
-      {t.ad}
-    </div>
-
-    {/* 승인용 하단 정보 */}
     <div style={styles.siteFooter}>
       <div style={styles.footerTitle}>
         {t.aboutTitle}
@@ -1814,10 +1805,6 @@ style={{
 {formatMoney(betAmount, language)}</div>
     </div>
 
-    {/* 광고 */}
-    <div style={styles.adBox}>
-    {t.ad}
-    </div>
   </>
 )}
 {screen === "share" && (
@@ -2303,7 +2290,6 @@ style={{
 )}
     </div>
 
-{!isMobile && <div style={styles.sideAd}>{t.ad}</div>}
 </div>
 )
 }
@@ -2618,32 +2604,6 @@ const styles = {
     textAlign: "center",
     color: "#ccc",
     lineHeight: "1.8",
-  },
-
-  adBox: {
-    marginTop: "80px",
-    height: "100px",
-    background: "#222",
-    borderRadius: "10px",
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-    color: "#777",
-    fontSize: "14px",
-  },
-  sideAd: {
-    width: "160px",
-    height: "600px",
-    margin: "20px 16px",
-    background: "#222",
-    borderRadius: "12px",
-    border: "1px solid #333",
-    color: "#777",
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center",
-    fontSize: "14px",
-    flexShrink: 0,
   },
 
   resultWrap: {
